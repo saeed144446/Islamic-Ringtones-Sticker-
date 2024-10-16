@@ -1,0 +1,24 @@
+{
+  "sticker-packs": [
+    {
+      "identifier": "pack1",
+      "name": "Pack 1",
+      "publisher": "Publisher 1",
+      "tray": "00_tray_icon",
+      "stickers": [
+        {
+          "image": "01_pumkin",
+          "description": "Sticker 6"
+        },
+        {
+          "image": "02_pumkin",
+          "description": "Sticker 7"
+        },
+        {
+          "image": "03_pumkin",
+          "description": "Sticker 8"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Add the queries element here to specify the apps you need to check -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="com.whatsapp.sticker.READ" />
+    <uses-permission android:name="com.whatsapp.sticker.WRITE" />
+
+    <queries>
+        <!-- WhatsApp -->
+        <package android:name="com.whatsapp" />
+        <!-- WhatsApp Business -->
+        <package android:name="com.whatsapp.w4b" />
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.IslamicRingtones"
+        tools:targetApi="31">
+
+        <!-- Activity and provider setup -->
+        <activity
+            android:name=".Activities.RingtonesPlay"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    
+
+
+    </application>
+</manifest>
